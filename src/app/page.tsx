@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1>Colleen McMillan Tutoring</h1>;
+  return (
+    <div className="bg-primary w-full h-[950px]">
+      <h2>Colleen McMillan Tutoring</h2>;
+    </div>
+  );
 }
