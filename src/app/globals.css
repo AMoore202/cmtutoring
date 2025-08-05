@@ -32,6 +32,7 @@
   --color-footer: var(--footer);
   --color-footer-subtle: var(--footer-subtle);
   --font-sans: var(--font-inter);
+  --font-akatab: var(--font-akatab);
 }
 
 body {
