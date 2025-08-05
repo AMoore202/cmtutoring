@@ -1,24 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #191A1A;
-  --primary: #2A4F60;
-  --shadow-button: 0 0 4px 0 rgba(0, 0, 0, 0.15),
-    0 16px 16px -8px rgba(0, 0, 0, 0.15),
-    0 8px 8px -4px rgba(0, 0, 0, 0.15),
-    0 4px 4px -2px rgba(0, 0, 0, 0.15),
-    0 2px 2px -1px rgba(0, 0, 0, 0.15),
-    0 1px 1px -0.5px rgba(0, 0, 0, 0.15),
-    0 0 1px 0.5px rgba(0, 0, 0, 0.50) inset,
-    0 -2px 2px 0 rgba(0, 0, 0, 0.15) inset,
-    0 2px 2px 0 rgba(255, 255, 255, 0.15) inset;
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #191A1A;
+    --primary: #2A4F60;
+    --primary-light: #396C83;
+    --primary-dark: #1A323C;
+    --primary-darkest: #0B1519;
+    --footer: #1D1F20;
+    --footer-subtle: #2B2C2C;
+    --shadowButton: 0 0 4px 0 rgba(0, 0, 0, 0.15),
+      0 16px 16px -8px rgba(0, 0, 0, 0.15),
+      0 8px 8px -4px rgba(0, 0, 0, 0.15),
+      0 4px 4px -2px rgba(0, 0, 0, 0.15),
+      0 2px 2px -1px rgba(0, 0, 0, 0.15),
+      0 1px 1px -0.5px rgba(0, 0, 0, 0.15),
+      0 0 1px 0.5px rgba(0, 0, 0, 0.50) inset,
+      0 -2px 2px 0 rgba(0, 0, 0, 0.15) inset,
+      0 2px 2px 0 rgba(255, 255, 255, 0.15) inset;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-darkest: var(--primary-darkest);
+  --color-footer: var(--footer);
+  --color-footer-subtle: var(--footer-subtle);
   --font-sans: var(--font-inter);
 }
 
