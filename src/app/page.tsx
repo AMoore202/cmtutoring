@@ -12,10 +12,34 @@ import {
   PlanetIcon,
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
+import ContactButton from "./ui/contact-button";
 
 export default function Home() {
   return (
     <div className="w-full flex flex-col">
+      <div className="w-full justify-between flex align-baseline fixed top-0 left-0 px-6 py-4 h-[120px] z-20 bg-[linear-gradient(180deg,rgba(26,25,25,0.75)_0%,rgba(26,25,25,0)_100%)]">
+        <p className="text-white text-2xl font-medium font-header h-12">
+          Colleen McMillan Tutoring
+        </p>
+        <ContactButton />
+      </div>
+      <div
+        className="w-full h-[1008px] bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url('/heroimage_cropped.webp')" }}
+      >
+        <div className="absolute top-2/5 left-1/4 w-[510px] flex flex-col align-baseline gap-4">
+          <h1 className="text-white text-[42px] font-semibold font-header">
+            Colleen McMillan Tutoring
+          </h1>
+          <p className="text-white text-xl font-sans">
+            Professional math and science tutoring, online and in the North Bay
+            area.
+          </p>
+          <div className="w-full flex items-baseline py-9">
+            <ContactButton />
+          </div>
+        </div>
+      </div>
       <div className="bg-primary w-full h-[950px] flex flex-col items-center justify-center py-12 px-5 md:py-24">
         <div className="w-full max-w-[1000px] flex flex-col items-start justify-center gap-4 pb-6">
           <h2 className="font-sans text-white font-semibold text-3xl md:text-5xl">
