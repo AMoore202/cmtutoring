@@ -18,24 +18,24 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col">
       <div className="w-full justify-between flex align-baseline fixed top-0 left-0 px-6 py-4 h-[120px] z-20 bg-[linear-gradient(180deg,rgba(26,25,25,0.75)_0%,rgba(26,25,25,0)_100%)]">
-        <p className="text-white text-2xl font-medium font-header h-12">
+        <p className="text-white text-base/8 md:text-2xl/12 font-medium font-header h-8 md:h-12 align-middle">
           Colleen McMillan Tutoring
         </p>
         <ContactButton />
       </div>
       <div
-        className="w-full h-[1008px] bg-cover bg-center bg-no-repeat relative"
+        className="w-full h-[500px] md:h-[650px] lg:h-[800px] xl:h-[1008px] bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/heroimage_cropped.webp')" }}
       >
-        <div className="absolute top-2/5 left-1/4 w-[510px] flex flex-col align-baseline gap-4">
-          <h1 className="text-white text-[42px] font-semibold font-header">
+        <div className="absolute top-2/5 left-5 md:left-1/7 xl:left-1/6 2xl:left-1/5 w-[300px] md:w-[450px] 2xl:w-[510px] flex flex-col align-baseline gap-2 md:gap-4">
+          <h1 className="text-white text-2xl md:text-4xl 2xl:text-[42px] font-semibold font-header">
             Colleen McMillan Tutoring
           </h1>
-          <p className="text-white text-xl font-sans">
+          <p className="text-white text-sm md:text-lg 2xl:text-xl font-sans">
             Professional math and science tutoring, online and in the North Bay
             area.
           </p>
-          <div className="w-full flex items-baseline py-9">
+          <div className="w-full flex items-baseline py-5 md:py-8 2xl:py-9">
             <ContactButton />
           </div>
         </div>
