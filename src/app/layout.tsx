@@ -5,7 +5,7 @@ import "./globals.css";
 const akatab = Akatab({
   variable: "--font-akatab",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "900"],
 });
 
 const inter = Inter({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${akatab} ${inter.variable} antialiased`}>
+      <body className={`${akatab.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
