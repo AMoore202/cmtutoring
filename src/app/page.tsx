@@ -11,6 +11,7 @@ import {
   MoleculeChainIcon,
   PlanetIcon,
 } from "./ui/icons";
+import CopyButton from "./ui/copy-button";
 
 export default function Home() {
   return (
@@ -83,9 +84,12 @@ export default function Home() {
         <h2 className="text-white font-header font-black text-2xl md:text-4xl text-center z-10">
           Any Questions?
         </h2>
-        <p className="text-white font-sans font-regular text-base md:text-2xl text-center z-10">
-          Email me at teachercolleenm@gmail.com
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="text-white font-sans font-regular text-base md:text-2xl text-center z-10">
+            Email me at teachercolleenm@gmail.com
+          </p>
+          <CopyButton />
+        </div>
       </div>
     </div>
   );
