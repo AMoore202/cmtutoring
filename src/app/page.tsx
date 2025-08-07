@@ -73,13 +73,13 @@ export default function Home() {
         </div>
       </div>
       <div className="relative bg-footer w-full flex flex-col items-center gap-4 px-5 py-9 md:py-24">
-        <RulerIcon className="absolute size-7 left-4 top-2" />
-        <BeakerIcon className="absolute size-8 left-16 top-7" />
-        <CalculatorIcon className="absolute size-8 left-5 bottom-1" />
-        <PlanetIcon className="absolute size-6 right-[180px] bottom-1" />
-        <MoleculeChainIcon className="absolute size-8 right-7 top-4" />
-        <AtomIcon className="absolute size-6 right-24 top-1" />
-        <AngleIcon className="absolute size-6 right-4 bottom-2" />
+        <RulerIcon className="absolute size-7 md:size-12 lg:size-14 xl:size-16 2xl:size-20 left-4 md:left-8 lg:left-10 xl:left-12 2xl:left-6 top-2 md:top-4 2xl:top-6" />
+        <BeakerIcon className="absolute size-8 md:size-16 lg:size-24 xl:size-30 2xl:size-36 left-16 md:left-36 lg:left-56 xl:left-72 2xl:left-96 top-7 2xl:top-8" />
+        <CalculatorIcon className="absolute size-8 md:size-20 xl:size-22 2xl:size-24 left-5 md:left-16 lg:left-32 xl:left-36 2xl:left-42 bottom-1 lg:bottom-4" />
+        <PlanetIcon className="absolute size-6 md:size-14 lg:size-16 2xl:size-18 right-[180px] md:right-[280px] lg:right-[400px] xl:right-[600px] 2xl:right-[800px] bottom-1 md:bottom-2" />
+        <AtomIcon className="absolute size-6 md:size-14 lg:size-16 xl:size-18 right-32 md:right-[180px] lg:right-[250px] xl:right-[325px] 2xl:right-[550px] top-1 md:top-2" />
+        <MoleculeChainIcon className="absolute size-8 md:size-18 lg:size-20 2xl:size-24 right-7 lg:right-8 xl:right-9 2xl:right-10 top-4 md:top-8 2xl:top-8" />
+        <AngleIcon className="absolute size-6 md:size-14 lg:size-16 2xl:size-20 right-4 md:right-22 lg:right-36 xl:right-48 2xl:right-60 bottom-2 md:bottom-6" />
         <h2 className="text-white font-header font-black text-2xl md:text-4xl text-center z-10">
           Any Questions?
         </h2>
