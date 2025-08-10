@@ -27,11 +27,11 @@ export default function Home() {
         className="w-full h-[500px] md:h-[650px] lg:h-[800px] xl:h-[1008px] bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/heroimage_cropped.webp')" }}
       >
-        <div className="absolute top-2/5 left-5 md:left-1/7 xl:left-1/6 2xl:left-1/5 w-[300px] md:w-[450px] 2xl:w-[510px] flex flex-col align-baseline gap-2 md:gap-4">
-          <h1 className="text-white text-2xl md:text-4xl 2xl:text-[42px] font-semibold font-header">
+        <div className="absolute top-2/5 left-5 md:left-1/7 xl:left-1/6 2xl:left-1/5 w-[300px] md:w-[450px] xl:w-[510px] 2xl:w-[595px] flex flex-col align-baseline gap-2 md:gap-4">
+          <h1 className="text-white text-2xl md:text-4xl xl:text-[42px] 2xl:text-5xl font-semibold font-header">
             Colleen McMillan Tutoring
           </h1>
-          <p className="text-white text-sm md:text-lg 2xl:text-xl font-sans">
+          <p className="text-white text-sm md:text-lg xl:text-xl 2xl:text-2xl font-sans">
             Professional math and science tutoring, online and in the North Bay
             area.
           </p>
