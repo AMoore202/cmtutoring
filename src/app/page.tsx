@@ -13,6 +13,7 @@ import {
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
 import ContactButton from "./ui/contact-button";
+import MessageQuote from "./ui/message-quote";
 
 export default function Home() {
   return (
@@ -37,6 +38,91 @@ export default function Home() {
           </p>
           <div className="w-full flex items-baseline py-5 md:py-8 2xl:py-9">
             <ContactButton />
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex gap-[160px] px-8 py-[100px] items-center justify-center">
+        <div className="w-[700px] flex flex-col gap-6">
+          <div className="w-full flex flex-col gap-4 isolate">
+            <h2 className="text-foreground font-bold font-sans text-4xl">
+              About Me
+            </h2>
+            <p className="text-foreground font-medium font-sans text-xl">
+              I&#39;m Colleen McMillan, a certified teacher (HBSc, BEd, OCT) and
+              professional tutor who has been helping high school and
+              post-secondary students tackle math, chemistry, and physics for
+              over 20 years. More recently, I also have also gotten back into
+              the classroom, teaching both high school and post-secondary
+              classes, and developing course content.
+            </p>
+          </div>
+          <div className="w-full flex flex-col gap-3">
+            <h2 className="text-foreground font-semibold font-sans text-[28px]">
+              Courses
+            </h2>
+            <div className="w-full flex flex-col gap-2">
+              <p className="text-foreground font-medium font-sans text-xl">
+                I&#39;m Colleen McMillan, a certified teacher (HBSc, BEd, OCT)
+                and professional tutor who has been helping high school and
+                post-secondary students tackle math, chemistry, and physics for
+                over 20 years. More recently, I also have also gotten back into
+                the classroom, teaching both high school and post-secondary
+                classes, and developing course content.
+              </p>
+              <ul className="text-foreground font-medium font-sans text-xl list-disc list-inside pl-4">
+                <li>Math - MHF4U and MCV4U</li>
+                <li>Physics - SPH3U and SPH4U</li>
+                <li>Chemistry - SCH3U and SCH4U</li>
+              </ul>
+            </div>
+            <div className="w-full flex flex-col gap-2">
+              <p className="text-foreground font-medium font-sans text-xl">
+                I also provide professional tutoring for all post-secondary
+                levels:
+              </p>
+              <ul className="text-foreground font-medium font-sans text-xl list-disc list-inside pl-4">
+                <li>Math</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+              </ul>
+            </div>
+          </div>
+          {/* <div className="relative text-white px-4 py-2 rounded-2xl shadow-lg max-w-xs bg-[linear-gradient(0deg,#2A4F60_0%,#396C83_100%)] z-20">
+            Hello! This is a message.
+
+            <div className="absolute bottom-0 left-4 w-4 h-4 rotate-45 translate-y-1/2 bg-[linear-gradient(0deg,#2A4F60_0%,#396C83_100%)] z-10"></div>
+          </div> */}
+          <MessageQuote />
+        </div>
+        <div className="w-[350px] flex flex-col items-center gap-20 pb-4">
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">20+</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Years experience tutoring
+              <br />
+              high school math & science
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">100%</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Student pass rate
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">6+</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Years experience teaching
+              <br />
+              college math & science
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">6+</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Years experience teaching and developing course content for high
+              school math & science
+            </p>
           </div>
         </div>
       </div>
