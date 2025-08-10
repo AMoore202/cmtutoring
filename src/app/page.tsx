@@ -13,7 +13,11 @@ import {
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
 import ContactButton from "./ui/contact-button";
-import MessageQuote from "./ui/message-quote";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Home() {
   return (
@@ -42,14 +46,28 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full flex gap-[160px] px-8 py-[100px] items-center justify-center">
-        <div className="w-[700px] flex flex-col gap-6">
+        <div className="w-[700px] flex flex-col gap-6 items-center">
           <div className="w-full flex flex-col gap-4 isolate">
             <h2 className="text-foreground font-bold font-sans text-4xl">
               About Me
             </h2>
             <p className="text-foreground font-medium font-sans text-xl">
-              I&#39;m Colleen McMillan, a certified teacher (HBSc, BEd, OCT) and
-              professional tutor who has been helping high school and
+              I&#39;m Colleen McMillan, a certified teacher (
+              <Tooltip>
+                <TooltipTrigger>HBSc</TooltipTrigger>
+                <TooltipContent>Honours Bachelor of Science</TooltipContent>
+              </Tooltip>
+              ,{" "}
+              <Tooltip>
+                <TooltipTrigger>BEd</TooltipTrigger>
+                <TooltipContent>Bachelor of Education</TooltipContent>
+              </Tooltip>
+              ,{" "}
+              <Tooltip>
+                <TooltipTrigger>OCT</TooltipTrigger>
+                <TooltipContent>Ontario Certified Teacher</TooltipContent>
+              </Tooltip>
+              ) and professional tutor who has been helping high school and
               post-secondary students tackle math, chemistry, and physics for
               over 20 years. More recently, I also have also gotten back into
               the classroom, teaching both high school and post-secondary
@@ -62,17 +80,48 @@ export default function Home() {
             </h2>
             <div className="w-full flex flex-col gap-2">
               <p className="text-foreground font-medium font-sans text-xl">
-                I&#39;m Colleen McMillan, a certified teacher (HBSc, BEd, OCT)
-                and professional tutor who has been helping high school and
-                post-secondary students tackle math, chemistry, and physics for
-                over 20 years. More recently, I also have also gotten back into
-                the classroom, teaching both high school and post-secondary
-                classes, and developing course content.
+                I provide professional tutoring for all high school levels
+                (grade 9-12), specializing in:
               </p>
               <ul className="text-foreground font-medium font-sans text-xl list-disc list-inside pl-4">
-                <li>Math - MHF4U and MCV4U</li>
-                <li>Physics - SPH3U and SPH4U</li>
-                <li>Chemistry - SCH3U and SCH4U</li>
+                <li>
+                  Math -{" "}
+                  <Tooltip>
+                    <TooltipTrigger>MHF4U</TooltipTrigger>
+                    <TooltipContent>Grade 12 Advanced Functions</TooltipContent>
+                  </Tooltip>{" "}
+                  and{" "}
+                  <Tooltip>
+                    <TooltipTrigger>MCV4U</TooltipTrigger>
+                    <TooltipContent>
+                      Grade 12 Calculus and Vectors
+                    </TooltipContent>
+                  </Tooltip>
+                </li>
+                <li>
+                  Physics -{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SPH3U</TooltipTrigger>
+                    <TooltipContent>Grade 11 Physics</TooltipContent>
+                  </Tooltip>{" "}
+                  and{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SPH4U</TooltipTrigger>
+                    <TooltipContent>Grade 12 Physics</TooltipContent>
+                  </Tooltip>
+                </li>
+                <li>
+                  Chemistry -{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SCH3U</TooltipTrigger>
+                    <TooltipContent>Grade 11 Chemistry</TooltipContent>
+                  </Tooltip>{" "}
+                  and{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SCH4U</TooltipTrigger>
+                    <TooltipContent>Grade 12 Chemistry</TooltipContent>
+                  </Tooltip>
+                </li>
               </ul>
             </div>
             <div className="w-full flex flex-col gap-2">
@@ -87,12 +136,16 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          {/* <div className="relative text-white px-4 py-2 rounded-2xl shadow-lg max-w-xs bg-[linear-gradient(0deg,#2A4F60_0%,#396C83_100%)] z-20">
-            Hello! This is a message.
-
-            <div className="absolute bottom-0 left-4 w-4 h-4 rotate-45 translate-y-1/2 bg-[linear-gradient(0deg,#2A4F60_0%,#396C83_100%)] z-10"></div>
-          </div> */}
-          <MessageQuote />
+          <div className="w-[525px] flex flex-col items-center justify-center gap-4 px-6 py-9 mt-8 mr-6 rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
+            <span className="text-white font-sans font-medium text-2xl text-center">
+              Colleen made a huge difference in my understanding of math. Her
+              explanations were clear, patient, and always encouraging. I went
+              from struggling to feeling confident before every test.
+            </span>
+            <span className="text-white font-sans font-bold text-xl text-center">
+              - Former Student
+            </span>
+          </div>
         </div>
         <div className="w-[350px] flex flex-col items-center gap-20 pb-4">
           <div className="flex flex-col items-center w-full gap-1">
