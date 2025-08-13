@@ -13,6 +13,11 @@ import {
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
 import ContactButton from "./ui/contact-button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Home() {
   return (
@@ -27,16 +32,153 @@ export default function Home() {
         className="w-full h-[500px] md:h-[650px] lg:h-[800px] xl:h-[1008px] bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/heroimage_cropped.webp')" }}
       >
-        <div className="absolute top-2/5 left-5 md:left-1/7 xl:left-1/6 2xl:left-1/5 w-[300px] md:w-[450px] 2xl:w-[510px] flex flex-col align-baseline gap-2 md:gap-4">
-          <h1 className="text-white text-2xl md:text-4xl 2xl:text-[42px] font-semibold font-header">
+        <div className="absolute top-2/5 left-5 md:left-1/7 xl:left-1/6 2xl:left-1/5 w-[300px] md:w-[450px] xl:w-[510px] 2xl:w-[595px] flex flex-col align-baseline gap-2 md:gap-4">
+          <h1 className="text-white text-2xl md:text-4xl xl:text-[42px] 2xl:text-5xl font-semibold font-header">
             Colleen McMillan Tutoring
           </h1>
-          <p className="text-white text-sm md:text-lg 2xl:text-xl font-sans">
+          <p className="text-white text-sm md:text-lg xl:text-xl 2xl:text-2xl font-sans">
             Professional math and science tutoring, online and in the North Bay
             area.
           </p>
           <div className="w-full flex items-baseline py-5 md:py-8 2xl:py-9">
             <ContactButton />
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex flex-col xl:flex-row gap-20 xl:gap-[160px] px-5 md:px-8 py-12 md:py-[100px] items-center justify-center">
+        <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
+          <div className="w-full flex flex-col gap-4 isolate">
+            <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
+              About Me
+            </h2>
+            <p className="text-foreground font-medium font-sans text-base md:text-xl">
+              I&#39;m Colleen McMillan, a certified teacher (
+              <Tooltip>
+                <TooltipTrigger>HBSc</TooltipTrigger>
+                <TooltipContent>Honours Bachelor of Science</TooltipContent>
+              </Tooltip>
+              ,{" "}
+              <Tooltip>
+                <TooltipTrigger>BEd</TooltipTrigger>
+                <TooltipContent>Bachelor of Education</TooltipContent>
+              </Tooltip>
+              ,{" "}
+              <Tooltip>
+                <TooltipTrigger>OCT</TooltipTrigger>
+                <TooltipContent>Ontario Certified Teacher</TooltipContent>
+              </Tooltip>
+              ) and professional tutor who has been helping high school and
+              post-secondary students tackle math, chemistry, and physics for
+              over 20 years. More recently, I also have also gotten back into
+              the classroom, teaching both high school and post-secondary
+              classes, and developing course content.
+            </p>
+          </div>
+          <div className="w-full flex flex-col gap-3">
+            <h2 className="text-foreground font-semibold font-sans text-2xl md:text-[28px]">
+              Courses
+            </h2>
+            <div className="w-full flex flex-col gap-2">
+              <p className="text-foreground font-medium font-sans text-base md:text-xl">
+                I provide professional tutoring for all high school levels
+                (grade 9-12), specializing in:
+              </p>
+              <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
+                <li>
+                  Math -{" "}
+                  <Tooltip>
+                    <TooltipTrigger>MHF4U</TooltipTrigger>
+                    <TooltipContent>Grade 12 Advanced Functions</TooltipContent>
+                  </Tooltip>{" "}
+                  and{" "}
+                  <Tooltip>
+                    <TooltipTrigger>MCV4U</TooltipTrigger>
+                    <TooltipContent>
+                      Grade 12 Calculus and Vectors
+                    </TooltipContent>
+                  </Tooltip>
+                </li>
+                <li>
+                  Physics -{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SPH3U</TooltipTrigger>
+                    <TooltipContent>Grade 11 Physics</TooltipContent>
+                  </Tooltip>{" "}
+                  and{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SPH4U</TooltipTrigger>
+                    <TooltipContent>Grade 12 Physics</TooltipContent>
+                  </Tooltip>
+                </li>
+                <li>
+                  Chemistry -{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SCH3U</TooltipTrigger>
+                    <TooltipContent>Grade 11 Chemistry</TooltipContent>
+                  </Tooltip>{" "}
+                  and{" "}
+                  <Tooltip>
+                    <TooltipTrigger>SCH4U</TooltipTrigger>
+                    <TooltipContent>Grade 12 Chemistry</TooltipContent>
+                  </Tooltip>
+                </li>
+              </ul>
+            </div>
+            <div className="w-full flex flex-col gap-2">
+              <p className="text-foreground font-medium font-sans text-base md:text-xl">
+                I also provide professional tutoring for all post-secondary
+                levels:
+              </p>
+              <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
+                <li>Math</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+              </ul>
+            </div>
+          </div>
+          <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-4 px-4 md:px-6 py-6 md:py-9 mt-8 mr-0 md:mr-6 rounded-3xl md:rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
+            <span className="text-white font-sans font-medium text-base md:text-2xl text-center">
+              Colleen has the unique ability to break down complex concepts in a
+              way that makes them understandable no matter what your background
+              or how long it&#39;s been since you last opened a math book. She
+              never made me feel behind or out of place instead, she was
+              encouraging at every step and celebrated progress, and offered
+              guidance when challenges arose.
+            </span>
+            <span className="text-white font-sans font-bold text-sm md:text-xl text-center">
+              - Former Student
+            </span>
+          </div>
+        </div>
+        <div className="w-[350px] flex flex-col items-center gap-20 pb-4">
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">20+</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Years experience tutoring
+              <br />
+              high school math & science
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">100%</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Student pass rate
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">6+</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Years experience teaching
+              <br />
+              college math & science
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-primary text-sans text-7xl font-bold">6+</p>
+            <p className="text-foreground text-sans text-xl/6 font-medium text-center">
+              Years experience teaching and developing course content for high
+              school math & science
+            </p>
           </div>
         </div>
       </div>
@@ -97,7 +239,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative bg-footer w-full flex flex-col items-center gap-4 px-5 py-9 md:py-24">
+      <div className="relative bg-footer w-full flex flex-col items-center gap-1 md:gap-4 px-5 py-9 md:py-24">
         <RulerIcon className="absolute size-7 md:size-12 lg:size-14 xl:size-16 2xl:size-20 left-4 md:left-8 lg:left-10 xl:left-12 2xl:left-6 top-2 md:top-4 2xl:top-6" />
         <BeakerIcon className="absolute size-8 md:size-16 lg:size-24 xl:size-30 2xl:size-36 left-16 md:left-36 lg:left-56 xl:left-72 2xl:left-96 top-7 2xl:top-8" />
         <CalculatorIcon className="absolute size-8 md:size-20 xl:size-22 2xl:size-24 left-5 md:left-16 lg:left-32 xl:left-36 2xl:left-42 bottom-1 lg:bottom-4" />
@@ -108,7 +250,7 @@ export default function Home() {
         <h2 className="text-white font-header font-black text-2xl md:text-4xl text-center z-10">
           Any Questions?
         </h2>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 md:gap-2">
           <p className="text-white font-sans font-regular text-base md:text-2xl text-center z-10">
             Email me at teachercolleenm@gmail.com
           </p>
