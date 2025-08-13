@@ -45,13 +45,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex gap-[160px] px-8 py-[100px] items-center justify-center">
-        <div className="w-[700px] flex flex-col gap-6 items-center">
+      <div className="w-full flex flex-col xl:flex-row gap-20 xl:gap-[160px] px-5 md:px-8 py-12 md:py-[100px] items-center justify-center">
+        <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
           <div className="w-full flex flex-col gap-4 isolate">
-            <h2 className="text-foreground font-bold font-sans text-4xl">
+            <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
               About Me
             </h2>
-            <p className="text-foreground font-medium font-sans text-xl">
+            <p className="text-foreground font-medium font-sans text-base md:text-xl">
               I&#39;m Colleen McMillan, a certified teacher (
               <Tooltip>
                 <TooltipTrigger>HBSc</TooltipTrigger>
@@ -75,15 +75,15 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full flex flex-col gap-3">
-            <h2 className="text-foreground font-semibold font-sans text-[28px]">
+            <h2 className="text-foreground font-semibold font-sans text-2xl md:text-[28px]">
               Courses
             </h2>
             <div className="w-full flex flex-col gap-2">
-              <p className="text-foreground font-medium font-sans text-xl">
+              <p className="text-foreground font-medium font-sans text-base md:text-xl">
                 I provide professional tutoring for all high school levels
                 (grade 9-12), specializing in:
               </p>
-              <ul className="text-foreground font-medium font-sans text-xl list-disc list-inside pl-4">
+              <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
                 <li>
                   Math -{" "}
                   <Tooltip>
@@ -125,24 +125,27 @@ export default function Home() {
               </ul>
             </div>
             <div className="w-full flex flex-col gap-2">
-              <p className="text-foreground font-medium font-sans text-xl">
+              <p className="text-foreground font-medium font-sans text-base md:text-xl">
                 I also provide professional tutoring for all post-secondary
                 levels:
               </p>
-              <ul className="text-foreground font-medium font-sans text-xl list-disc list-inside pl-4">
+              <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
                 <li>Math</li>
                 <li>Physics</li>
                 <li>Chemistry</li>
               </ul>
             </div>
           </div>
-          <div className="w-[525px] flex flex-col items-center justify-center gap-4 px-6 py-9 mt-8 mr-6 rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
-            <span className="text-white font-sans font-medium text-2xl text-center">
-              Colleen made a huge difference in my understanding of math. Her
-              explanations were clear, patient, and always encouraging. I went
-              from struggling to feeling confident before every test.
+          <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-4 px-4 md:px-6 py-6 md:py-9 mt-8 mr-0 md:mr-6 rounded-3xl md:rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
+            <span className="text-white font-sans font-medium text-base md:text-2xl text-center">
+              Colleen has the unique ability to break down complex concepts in a
+              way that makes them understandable no matter what your background
+              or how long it&#39;s been since you last opened a math book. She
+              never made me feel behind or out of place instead, she was
+              encouraging at every step and celebrated progress, and offered
+              guidance when challenges arose.
             </span>
-            <span className="text-white font-sans font-bold text-xl text-center">
+            <span className="text-white font-sans font-bold text-sm md:text-xl text-center">
               - Former Student
             </span>
           </div>
@@ -236,7 +239,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative bg-footer w-full flex flex-col items-center gap-4 px-5 py-9 md:py-24">
+      <div className="relative bg-footer w-full flex flex-col items-center gap-1 md:gap-4 px-5 py-9 md:py-24">
         <RulerIcon className="absolute size-7 md:size-12 lg:size-14 xl:size-16 2xl:size-20 left-4 md:left-8 lg:left-10 xl:left-12 2xl:left-6 top-2 md:top-4 2xl:top-6" />
         <BeakerIcon className="absolute size-8 md:size-16 lg:size-24 xl:size-30 2xl:size-36 left-16 md:left-36 lg:left-56 xl:left-72 2xl:left-96 top-7 2xl:top-8" />
         <CalculatorIcon className="absolute size-8 md:size-20 xl:size-22 2xl:size-24 left-5 md:left-16 lg:left-32 xl:left-36 2xl:left-42 bottom-1 lg:bottom-4" />
@@ -247,7 +250,7 @@ export default function Home() {
         <h2 className="text-white font-header font-black text-2xl md:text-4xl text-center z-10">
           Any Questions?
         </h2>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 md:gap-2">
           <p className="text-white font-sans font-regular text-base md:text-2xl text-center z-10">
             Email me at teachercolleenm@gmail.com
           </p>
