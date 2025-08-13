@@ -3,6 +3,7 @@
 import { CopyIcon, CheckmarkIcon } from "./icons";
 import { useState } from "react";
 import { toast, Toaster } from "sonner";
+import clsx from "clsx";
 
 export default function CopyButton() {
   const email = "teachercolleenm@gmail.com";
@@ -23,9 +24,20 @@ export default function CopyButton() {
   return (
     <button
       onClick={handleCopy}
-      className="flex items-center p-2 hover:bg-white/5 rounded-lg transition cursor-pointer"
+      className="relative grid place-items-center size-10 p-2 hover:bg-white/5 rounded-lg transition cursor-pointer"
     >
-      {copied ? <CheckmarkIcon /> : <CopyIcon />}
+      <CheckmarkIcon
+        className={clsx(
+          "absolute transition-all duration-200",
+          copied ? "opacity-100 scale-100" : "opacity-0 scale-0"
+        )}
+      />
+      <CopyIcon
+        className={clsx(
+          "absolute transition-all duration-200",
+          copied ? "opacity-0 scale-75" : "opacity-100 scale-100"
+        )}
+      />
       <Toaster position="bottom-center" richColors />
     </button>
   );
