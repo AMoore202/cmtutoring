@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="w-full flex flex-col">
       <div className="w-full justify-between flex align-baseline fixed top-0 left-0 px-6 py-4 h-[120px] z-20 bg-[linear-gradient(180deg,rgba(26,25,25,0.75)_0%,rgba(26,25,25,0)_100%)]">
-        <p className="text-white text-base/8 md:text-2xl/12 font-medium font-header h-8 md:h-12 align-middle">
+        <p className="text-white text-base/8 md:text-2xl/12 font-medium font-header h-9 md:h-12 align-middle">
           Colleen McMillan Tutoring
         </p>
         <ContactButton />
@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <div className="w-full flex flex-col xl:flex-row gap-20 xl:gap-[160px] px-5 md:px-8 py-12 md:py-[100px] items-center justify-center">
         <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
-          <div className="w-full flex flex-col gap-4 isolate">
+          <div className="w-full flex flex-col gap-2 md:gap-4 isolate">
             <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
               About Me
             </h2>
@@ -74,11 +74,11 @@ export default function Home() {
               classes, and developing course content.
             </p>
           </div>
-          <div className="w-full flex flex-col gap-3">
-            <h2 className="text-foreground font-semibold font-sans text-2xl md:text-[28px]">
+          <div className="w-full flex flex-col gap-1 md:gap-3">
+            <h2 className="text-foreground font-semibold font-sans text-2xl mt-4 md:mt-0 md:text-[28px]">
               Courses
             </h2>
-            <div className="w-full flex flex-col gap-2">
+            <div className="w-full flex flex-col gap-1 md:gap-2">
               <p className="text-foreground font-medium font-sans text-base md:text-xl">
                 I provide professional tutoring for all high school levels
                 (grade 9-12), specializing in:
@@ -124,7 +124,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="w-full flex flex-col gap-2">
+            <div className="w-full flex flex-col gap-1 md:gap-2 mt-1 md:mt-0">
               <p className="text-foreground font-medium font-sans text-base md:text-xl">
                 I also provide professional tutoring for all post-secondary
                 levels:
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-4 px-4 md:px-6 py-6 md:py-9 mt-8 mr-0 md:mr-6 rounded-3xl md:rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
-            <span className="text-white font-sans font-medium text-base md:text-2xl text-center">
+            <span className="text-white font-sans font-normal text-base/5 md:text-2xl text-center">
               Colleen has the unique ability to break down complex concepts in a
               way that makes them understandable no matter what your background
               or how long it&#39;s been since you last opened a math book. She
@@ -150,7 +150,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <div className="w-[350px] flex flex-col items-center gap-20 pb-4">
+        <div className="w-[350px] flex flex-col items-center gap-12 lg:gap-20 pb-4">
           <div className="flex flex-col items-center w-full gap-1">
             <p className="text-primary text-sans text-7xl font-bold">20+</p>
             <p className="text-foreground text-sans text-xl/6 font-medium text-center">
