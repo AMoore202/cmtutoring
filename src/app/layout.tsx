@@ -15,7 +15,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title:
-    "Colleen McMillan High School and Post-Secondary Tutoring | Online and In-Person in the North Bay Area",
+    "Colleen McMillan Tutoring | High School and Post-Secondary Tutoring, Online and In-Person in the North Bay Area",
   description:
     "Professional math and science tutoring for high school and post-secondary students, online and in the North Bay area.",
 };
