@@ -13,6 +13,7 @@ import {
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
 import ContactButton from "./ui/contact-button";
+import Quote from "./ui/quote";
 import {
   Tooltip,
   TooltipContent,
@@ -47,7 +48,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row gap-20 xl:gap-[160px] px-5 md:px-8 py-12 md:py-[100px] items-center justify-center">
+      <div className="w-full flex flex-col xl:flex-row gap-20 xl:gap-[160px] px-4 md:px-8 py-12 md:py-[100px] items-center justify-center">
         <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
           <div className="w-full flex flex-col gap-2 md:gap-4 isolate">
             <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
@@ -138,6 +139,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <Quote />
           <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-4 px-4 md:px-6 py-6 md:py-9 mt-8 mr-0 md:mr-6 rounded-3xl md:rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
             <span className="text-white font-sans font-normal text-base/5 md:text-2xl text-center">
               Colleen has the unique ability to break down complex concepts in a
