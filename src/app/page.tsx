@@ -279,7 +279,7 @@ export default function Home() {
           <CopyButton />
         </div>
       </div>
-      <div className="w-full h-[2000px] grid place-content-center">
+      <div className="w-full h-[2000px] flex items-center justify-center">
         <Carousel quotes={quotes} />
       </div>
     </div>
