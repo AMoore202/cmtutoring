@@ -13,14 +13,33 @@ import {
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
 import ContactButton from "./ui/contact-button";
-import Quote from "./ui/quote";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Carousel from "./ui/carousel";
 
 export default function Home() {
+  const quotes = [
+    {
+      paragraphs: [
+        "From our very first session, Colleen demonstrated a deep and comprehensive understanding of each subject. She was very good at taking complex concepts and breaking them down into clear, manageable steps. She was incredibly patient and always took the time to ensure I truly understood the material, rather than just memorizing it.",
+        "Thanks to her guidance, my confidence grew significantly, and I saw a big improvement in my grades. I went from struggling with key topics to feeling confident in my ability to solve problems and succeed in my classes.",
+        "Colleen is not only an exceptional teacher but also a dedicated and encouraging mentor. I am very grateful for her help and wholeheartedly recommend her to any student looking to excel in their courses.",
+      ],
+      name: "- Rohan A.",
+    },
+    {
+      paragraphs: [
+        "As a mature student returning to school, I approached math with a fair amount of hesitation and lots of self-doubt. From the very beginning, Colleen created a learning environment that was both welcoming and empowering. Her teaching style is clear, patient, and incredibly supportive, which made a world of difference in helping me build not only my skills by also my confidence.",
+        "Colleen has the unique ability to break down complex concepts in a way that makes them understandable no matter what your background or how long it's been since you last opened a math book. She never made me feel behind or out of place instead, she was encouraging at every step and celebrated progress, and offered guidance when challenges arose.",
+        "If you're looking for a math teacher who genuinely cares and has the skill to help students succeed at any stage of life, Colleen is the right choice!",
+      ],
+      name: "- Taryn  C.",
+    },
+  ];
+
   return (
     <div className="w-full flex flex-col">
       <div className="w-full justify-between flex align-baseline fixed top-0 left-0 px-6 py-4 h-[120px] z-20 bg-[linear-gradient(180deg,rgba(26,25,25,0.75)_0%,rgba(26,25,25,0)_100%)]">
@@ -139,7 +158,6 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Quote />
           <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-4 px-4 md:px-6 py-6 md:py-9 mt-8 mr-0 md:mr-6 rounded-3xl md:rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
             <span className="text-white font-sans font-normal text-base/5 md:text-2xl text-center">
               Colleen has the unique ability to break down complex concepts in a
@@ -260,6 +278,9 @@ export default function Home() {
           </p>
           <CopyButton />
         </div>
+      </div>
+      <div className="w-full h-[2000px] grid place-content-center">
+        <Carousel quotes={quotes} />
       </div>
     </div>
   );
