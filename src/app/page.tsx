@@ -175,7 +175,7 @@ export default function Home() {
         <div className="w-full hidden md:flex items-center justify-center">
           <Carousel quotes={quotes} />
         </div>
-        <div className="mx-4">
+        <div className="mx-4 md:hidden">
           <Quote {...quotes[0]} />
         </div>
         {/* <div className="w-[350px] flex flex-col items-center gap-12 lg:gap-20 pb-4">
