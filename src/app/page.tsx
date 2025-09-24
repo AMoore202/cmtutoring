@@ -69,7 +69,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col gap-20 xl:gap-[120px] py-12 md:py-[150px] items-center justify-center">
+      <div className="w-full flex flex-col gap-20 xl:gap-[150px] py-12 md:py-[150px] items-center justify-center">
         <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-[120px] px-4 ">
           <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
             <div className="w-full flex flex-col gap-2 md:gap-4 isolate">

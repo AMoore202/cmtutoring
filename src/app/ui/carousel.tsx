@@ -22,7 +22,7 @@ export default function Carousel({ quotes }: CarouselProps) {
   };
 
   return (
-    <div className="w-full flex items-center overflow-hidden">
+    <div className="w-full flex items-center overflow-hidden py-8">
       <div className="relative flex items-center justify-center w-full">
         <div
           className="flex w-full max-w-[650px] xl:max-w-[850px] transition-transform duration-500 ease-in-out"
