@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   UserIcon,
   GroupIcon,
@@ -67,112 +68,113 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col xl:flex-row gap-20 xl:gap-[160px] px-4 md:px-8 py-12 md:py-[100px] items-center justify-center">
-        <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
-          <div className="w-full flex flex-col gap-2 md:gap-4 isolate">
-            <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
-              About Me
-            </h2>
-            <p className="text-foreground font-medium font-sans text-base md:text-xl">
-              I&#39;m Colleen McMillan, a certified teacher (
-              <Tooltip>
-                <TooltipTrigger>HBSc</TooltipTrigger>
-                <TooltipContent>Honours Bachelor of Science</TooltipContent>
-              </Tooltip>
-              ,{" "}
-              <Tooltip>
-                <TooltipTrigger>BEd</TooltipTrigger>
-                <TooltipContent>Bachelor of Education</TooltipContent>
-              </Tooltip>
-              ,{" "}
-              <Tooltip>
-                <TooltipTrigger>OCT</TooltipTrigger>
-                <TooltipContent>Ontario Certified Teacher</TooltipContent>
-              </Tooltip>
-              ) and professional tutor who has been helping high school and
-              post-secondary students tackle math, chemistry, and physics for
-              over 20 years. More recently, I also have also gotten back into
-              the classroom, teaching both high school and post-secondary
-              classes, and developing course content.
-            </p>
-          </div>
-          <div className="w-full flex flex-col gap-1 md:gap-3">
-            <h2 className="text-foreground font-semibold font-sans text-2xl mt-4 md:mt-0 md:text-[28px]">
-              Courses
-            </h2>
-            <div className="w-full flex flex-col gap-1 md:gap-2">
+      <div className="w-full flex flex-col gap-20 xl:gap-[120px] py-12 md:py-[150px] items-center justify-center">
+        <div className="w-full flex items-center justify-center gap-[120px]">
+          <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
+            <div className="w-full flex flex-col gap-2 md:gap-4 isolate">
+              <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
+                About Me
+              </h2>
               <p className="text-foreground font-medium font-sans text-base md:text-xl">
-                I provide professional tutoring for all high school levels
-                (grade 9-12), specializing in:
+                I&#39;m Colleen McMillan, a certified teacher (
+                <Tooltip>
+                  <TooltipTrigger>HBSc</TooltipTrigger>
+                  <TooltipContent>Honours Bachelor of Science</TooltipContent>
+                </Tooltip>
+                ,{" "}
+                <Tooltip>
+                  <TooltipTrigger>BEd</TooltipTrigger>
+                  <TooltipContent>Bachelor of Education</TooltipContent>
+                </Tooltip>
+                ,{" "}
+                <Tooltip>
+                  <TooltipTrigger>OCT</TooltipTrigger>
+                  <TooltipContent>Ontario Certified Teacher</TooltipContent>
+                </Tooltip>
+                ) and professional tutor who has been helping high school and
+                post-secondary students tackle math, chemistry, and physics for
+                over 20 years. More recently, I also have also gotten back into
+                the classroom, teaching both high school and post-secondary
+                classes, and developing course content.
               </p>
-              <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
-                <li>
-                  Math -{" "}
-                  <Tooltip>
-                    <TooltipTrigger>MHF4U</TooltipTrigger>
-                    <TooltipContent>Grade 12 Advanced Functions</TooltipContent>
-                  </Tooltip>{" "}
-                  and{" "}
-                  <Tooltip>
-                    <TooltipTrigger>MCV4U</TooltipTrigger>
-                    <TooltipContent>
-                      Grade 12 Calculus and Vectors
-                    </TooltipContent>
-                  </Tooltip>
-                </li>
-                <li>
-                  Physics -{" "}
-                  <Tooltip>
-                    <TooltipTrigger>SPH3U</TooltipTrigger>
-                    <TooltipContent>Grade 11 Physics</TooltipContent>
-                  </Tooltip>{" "}
-                  and{" "}
-                  <Tooltip>
-                    <TooltipTrigger>SPH4U</TooltipTrigger>
-                    <TooltipContent>Grade 12 Physics</TooltipContent>
-                  </Tooltip>
-                </li>
-                <li>
-                  Chemistry -{" "}
-                  <Tooltip>
-                    <TooltipTrigger>SCH3U</TooltipTrigger>
-                    <TooltipContent>Grade 11 Chemistry</TooltipContent>
-                  </Tooltip>{" "}
-                  and{" "}
-                  <Tooltip>
-                    <TooltipTrigger>SCH4U</TooltipTrigger>
-                    <TooltipContent>Grade 12 Chemistry</TooltipContent>
-                  </Tooltip>
-                </li>
-              </ul>
             </div>
-            <div className="w-full flex flex-col gap-1 md:gap-2 mt-1 md:mt-0">
-              <p className="text-foreground font-medium font-sans text-base md:text-xl">
-                I also provide professional tutoring for all post-secondary
-                levels:
-              </p>
-              <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
-                <li>Math</li>
-                <li>Physics</li>
-                <li>Chemistry</li>
-              </ul>
+            <div className="w-full flex flex-col gap-1 md:gap-3">
+              <h2 className="text-foreground font-semibold font-sans text-2xl mt-4 md:mt-0 md:text-[28px]">
+                Courses
+              </h2>
+              <div className="w-full flex flex-col gap-1 md:gap-2">
+                <p className="text-foreground font-medium font-sans text-base md:text-xl">
+                  I provide professional tutoring for all high school levels
+                  (grade 9-12), specializing in:
+                </p>
+                <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
+                  <li>
+                    Math -{" "}
+                    <Tooltip>
+                      <TooltipTrigger>MHF4U</TooltipTrigger>
+                      <TooltipContent>
+                        Grade 12 Advanced Functions
+                      </TooltipContent>
+                    </Tooltip>{" "}
+                    and{" "}
+                    <Tooltip>
+                      <TooltipTrigger>MCV4U</TooltipTrigger>
+                      <TooltipContent>
+                        Grade 12 Calculus and Vectors
+                      </TooltipContent>
+                    </Tooltip>
+                  </li>
+                  <li>
+                    Physics -{" "}
+                    <Tooltip>
+                      <TooltipTrigger>SPH3U</TooltipTrigger>
+                      <TooltipContent>Grade 11 Physics</TooltipContent>
+                    </Tooltip>{" "}
+                    and{" "}
+                    <Tooltip>
+                      <TooltipTrigger>SPH4U</TooltipTrigger>
+                      <TooltipContent>Grade 12 Physics</TooltipContent>
+                    </Tooltip>
+                  </li>
+                  <li>
+                    Chemistry -{" "}
+                    <Tooltip>
+                      <TooltipTrigger>SCH3U</TooltipTrigger>
+                      <TooltipContent>Grade 11 Chemistry</TooltipContent>
+                    </Tooltip>{" "}
+                    and{" "}
+                    <Tooltip>
+                      <TooltipTrigger>SCH4U</TooltipTrigger>
+                      <TooltipContent>Grade 12 Chemistry</TooltipContent>
+                    </Tooltip>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full flex flex-col gap-1 md:gap-2 mt-1 md:mt-0">
+                <p className="text-foreground font-medium font-sans text-base md:text-xl">
+                  I also provide professional tutoring for all post-secondary
+                  levels:
+                </p>
+                <ul className="text-foreground font-medium font-sans text-base md:text-xl list-disc list-inside pl-4">
+                  <li>Math</li>
+                  <li>Physics</li>
+                  <li>Chemistry</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="w-full flex flex-col items-center justify-center gap-3 md:gap-4 px-4 md:px-6 py-6 md:py-9 mt-8 mr-0 md:mr-6 rounded-3xl md:rounded-[36px] bg-[linear-gradient(180deg,#396C83_0%,#2A4F60_100%)] shadow-[0_0_4px_0_rgba(0,0,0,0.15),0_16px_16px_-8px_rgba(0,0,0,0.15),0_8px_8px_-4px_rgba(0,0,0,0.15),0_4px_4px_-2px_rgba(0,0,0,0.15),0_2px_2px_-1px_rgba(0,0,0,0.15),0_1px_1px_-0.5px_rgba(0,0,0,0.15),inset_0_0_1px_0.5px_rgba(0,0,0,0.5),inset_0_-2px_2px_0_rgba(0,0,0,0.15),inset_0_2px_2px_0_rgba(255,255,255,0.15)]">
-            <span className="text-white font-sans font-normal text-base/5 md:text-2xl text-center">
-              Colleen has the unique ability to break down complex concepts in a
-              way that makes them understandable no matter what your background
-              or how long it&#39;s been since you last opened a math book. She
-              never made me feel behind or out of place instead, she was
-              encouraging at every step and celebrated progress, and offered
-              guidance when challenges arose.
-            </span>
-            <span className="text-white font-sans font-bold text-sm md:text-xl text-center">
-              - Former Student
-            </span>
-          </div>
+          <Image
+            src="/Colleen_Headshot.webp"
+            alt="Colleen McMillan Headshot"
+            width={450}
+            height={450}
+            className="rounded-4xl"
+          />
         </div>
-        <div className="w-[350px] flex flex-col items-center gap-12 lg:gap-20 pb-4">
+        <div className="w-full flex items-center justify-center">
+          <Carousel quotes={quotes} />
+        </div>
+        {/* <div className="w-[350px] flex flex-col items-center gap-12 lg:gap-20 pb-4">
           <div className="flex flex-col items-center w-full gap-1">
             <p className="text-primary text-sans text-7xl font-bold">20+</p>
             <p className="text-foreground text-sans text-xl/6 font-medium text-center">
@@ -202,7 +204,7 @@ export default function Home() {
               school math & science
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="bg-primary w-full h-[950px] flex flex-col items-center justify-center py-12 px-5 md:py-24">
         <div className="w-full max-w-[1000px] flex flex-col items-start justify-center gap-4 pb-6">
@@ -278,9 +280,6 @@ export default function Home() {
           </p>
           <CopyButton />
         </div>
-      </div>
-      <div className="w-full h-[2000px] flex items-center justify-center">
-        <Carousel quotes={quotes} />
       </div>
     </div>
   );
