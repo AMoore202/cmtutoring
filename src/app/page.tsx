@@ -19,6 +19,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Quote from "./ui/quote";
 import Carousel from "./ui/carousel";
 
 export default function Home() {
@@ -69,7 +70,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full flex flex-col gap-20 xl:gap-[120px] py-12 md:py-[150px] items-center justify-center">
-        <div className="w-full flex items-center justify-center gap-[120px]">
+        <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-[120px] px-4 ">
           <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
             <div className="w-full flex flex-col gap-2 md:gap-4 isolate">
               <h2 className="text-foreground font-bold font-sans text-3xl md:text-4xl">
@@ -171,8 +172,11 @@ export default function Home() {
             className="rounded-4xl"
           />
         </div>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full hidden md:flex items-center justify-center">
           <Carousel quotes={quotes} />
+        </div>
+        <div className="mx-4">
+          <Quote {...quotes[0]} />
         </div>
         {/* <div className="w-[350px] flex flex-col items-center gap-12 lg:gap-20 pb-4">
           <div className="flex flex-col items-center w-full gap-1">

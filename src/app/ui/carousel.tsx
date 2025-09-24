@@ -25,14 +25,14 @@ export default function Carousel({ quotes }: CarouselProps) {
     <div className="w-full flex items-center overflow-hidden">
       <div className="relative flex items-center justify-center w-full">
         <div
-          className="flex w-full max-w-[850px] transition-transform duration-500 ease-in-out"
+          className="flex w-full max-w-[650px] xl:max-w-[850px] transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {quotes.map((quote, i) => (
             <div
               key={i}
               className={clsx(
-                "flex-shrink-0 flex content-center w-full max-w-[850px] transition-all duration-500 ease-in-out",
+                "flex-shrink-0 flex content-center w-full max-w-[650px] xl:max-w-[850px] transition-all duration-500 ease-in-out",
                 i === currentIndex
                   ? "opacity-100 scale-100"
                   : "opacity-25 scale-95 cursor-pointer blur-[2px]"
