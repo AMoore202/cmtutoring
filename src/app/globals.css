@@ -2,6 +2,27 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;       /* ensure no stretching */
+  animation: scroll 20s linear infinite;
+}
+
+
+
 @layer base {
   :root {
     --background: #ffffff;
@@ -21,6 +42,15 @@
       0 0 1px 0.5px rgba(0, 0, 0, 0.50) inset,
       0 -2px 2px 0 rgba(0, 0, 0, 0.15) inset,
       0 2px 2px 0 rgba(255, 255, 255, 0.15) inset;
+    --shadow-button-subtle: 0 0 4px 0 rgba(0, 0, 0, 0.10),
+      0 16px 16px -8px rgba(0, 0, 0, 0.10),
+      0 8px 8px -4px rgba(0, 0, 0, 0.10),
+      0 4px 4px -2px rgba(0, 0, 0, 0.10),
+      0 2px 2px -1px rgba(0, 0, 0, 0.10),
+      0 1px 1px -0.5px rgba(0, 0, 0, 0.10),
+      0 0 1px 0.5px rgba(0, 0, 0, 0.50) inset,
+      0 -2px 2px 0 rgba(0, 0, 0, 0.10) inset,
+      0 2px 2px 0 rgba(255, 255, 255, 0.10) inset;
   }
 }
 
@@ -68,6 +98,7 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --shadow-button: var(--shadow-button);
+  --shadow-button-subtle: var(--shadow-button-subtle);
 }
 
 :root {
