@@ -51,7 +51,7 @@ export default function Home() {
         <ContactButton />
       </div>
       <div
-        className="w-full flex items-center justify-center h-screen bg-cover bg-center bg-no-repeat relative pb-8"
+        className="w-full flex flex-col items-center justify-center h-screen bg-cover bg-center bg-no-repeat relative pb-8"
         style={{ backgroundImage: "url('/heroimage_cropped.webp')" }}
       >
         <div className="w-[1210px] mx-5 flex flex-col items-center justify-center h-full pt-32 gap-4">
@@ -64,6 +64,36 @@ export default function Home() {
           </p>
           <div className="w-full flex items-baseline py-5 md:py-8 2xl:py-9">
             <ContactButton />
+          </div>
+        </div>
+        <div className="flex items-start py-12 gap-10">
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-white/75 text-sans text-5xl font-bold">20+</p>
+            <p className="text-white/75 text-sans text-xl/6 font-medium text-center">
+              Years experience tutoring
+              <br />
+              high school math & science
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-white/75 text-sans text-5xl font-bold">100%</p>
+            <p className="text-white/75 text-sans text-xl/6 font-medium text-center">
+              Student pass rate
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-white/75 text-sans text-5xl font-bold">6+</p>
+            <p className="text-white/75 text-sans text-xl/6 font-medium text-center">
+              Years experience teaching
+              <br />
+              college math & science
+            </p>
+          </div>
+          <div className="flex flex-col items-center w-full gap-1">
+            <p className="text-white/75 text-sans text-5xl font-bold">6+</p>
+            <p className="text-white/75 text-sans text-xl/6 font-medium text-center">
+              Years experience teaching high school math & science
+            </p>
           </div>
         </div>
       </div>
