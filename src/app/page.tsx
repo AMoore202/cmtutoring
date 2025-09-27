@@ -13,7 +13,7 @@ import {
   PlanetIcon,
 } from "./ui/icons";
 import CopyButton from "./ui/copy-button";
-import ContactButton from "./ui/contact-button";
+import { ContactButton, ContactHeroButton, AboutMeButton } from "./ui/buttons";
 import {
   Tooltip,
   TooltipContent,
@@ -62,8 +62,9 @@ export default function Home() {
             Professional math and science tutoring, online and in the North Bay
             area.
           </p>
-          <div className="w-full flex items-baseline py-5 md:py-8 2xl:py-9">
-            <ContactButton />
+          <div className="w-full flex items-center py-12 justify-center gap-4">
+            <AboutMeButton />
+            <ContactHeroButton />
           </div>
         </div>
         <div className="flex items-start py-12 gap-10">
@@ -97,7 +98,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col gap-20 xl:gap-[150px] py-12 md:py-[150px] items-center justify-center">
+      <div
+        id="about-me"
+        className="w-full flex flex-col gap-20 xl:gap-[150px] py-12 md:py-[150px] items-center justify-center"
+      >
         <div className="w-full flex flex-col xl:flex-row items-center justify-center gap-12 xl:gap-[120px] px-4 ">
           <div className="w-full max-w-[700px] flex flex-col gap-2 md:gap-6 items-center">
             <div className="w-full flex flex-col gap-2 md:gap-4 isolate">
