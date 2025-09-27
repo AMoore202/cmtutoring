@@ -7,6 +7,22 @@ body {
   scroll-behavior: smooth;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-flex;       /* ensure no stretching */
+  animation: scroll 20s linear infinite;
+}
+
+
+
 @layer base {
   :root {
     --background: #ffffff;

@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/tooltip";
 import Quote from "./ui/quote";
 import Carousel from "./ui/carousel";
+import HeroStats from "./ui/hero-stats";
 
 export default function Home() {
   const quotes = [
@@ -67,7 +68,8 @@ export default function Home() {
             <ContactHeroButton />
           </div>
         </div>
-        <div className="flex items-start py-12 gap-4 md:gap-10">
+        <HeroStats />
+        {/* <div className="flex items-start py-12 gap-4 md:gap-10">
           <div className="flex flex-col items-center w-full gap-1 min-w-[175px]">
             <p className="text-white/90 text-sans text-2xl md:text-5xl font-bold">
               20+
@@ -104,7 +106,7 @@ export default function Home() {
               Years experience teaching high school math & science
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div
         id="about-me"
